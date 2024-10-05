@@ -3,6 +3,7 @@
   flex-direction: column;
   border: 1px blue solid;
   padding: 16px;
+  gap: 8px;
 }
 
 .field {

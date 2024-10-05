@@ -6,12 +6,8 @@ export default function GeneralInfoSection() {
     <div className="section">
       <h1>General Info</h1>
       <div className="field">
-        <label htmlFor="first-name">First Name: </label>
-        <input type="text" id="first-name" />
-      </div>
-      <div className="field">
-        <label htmlFor="first-name">Last Name: </label>
-        <input type="text" id="last-name" />
+        <label htmlFor="full-name">Full Name: </label>
+        <input type="text" id="full-name" />
       </div>
       <div className="field">
         <label htmlFor="email">Email: </label>
@@ -20,6 +16,10 @@ export default function GeneralInfoSection() {
       <div className="field">
         <label htmlFor="phone">Phone Number: </label>
         <input type="tel" id="phone" />
+      </div>
+      <div className="field">
+        <label htmlFor="address">Address: </label>
+        <input type="text" id="address" />
       </div>
       <ButtonContainer></ButtonContainer>
     </div>
