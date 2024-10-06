@@ -1,3 +1,4 @@
+import "../styles/Preview.css";
 export default function Preview() {
   return (
     <div className="preview">
@@ -12,32 +13,34 @@ export default function Preview() {
           <span className="address-preview">Chicago, IL</span>
         </div>
       </div>
-      <div className="detail-preview">
-        <h3>Education</h3>
-        <div className="detail-container">
-          <div className="left-detail">
-            <p>Loyola University</p>
-            <p>08/99 - 05/03</p>
-          </div>
-          <div className="right-detail">
-            <p>B.S./M.S. in Civil Engineerring</p>
-            <p>3.98/4.0 GPA</p>
+      <div className="detail-preview-container">
+        <div className="detail-preview">
+          <h3>Education</h3>
+          <div className="detail-container">
+            <div className="left-detail">
+              <p>Loyola University</p>
+              <p>08/99 - 05/03</p>
+            </div>
+            <div className="right-detail">
+              <p>B.S./M.S. in Civil Engineerring</p>
+              <p>3.98/4.0 GPA</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="detail-preview">
-        <h3>Experience</h3>
-        <div className="detail-container">
-          <div className="left-detail">
-            <p>Middleton, Maxwell and Schaum</p>
-            <p>06/03 - 03/05</p>
-          </div>
-          <div className="right-detail">
-            <p>Structural Engineer</p>
-            <p>
-              Applied creative and analytical problems solving skills to
-              multiple advanced building systems.
-            </p>
+        <div className="detail-preview">
+          <h3>Experience</h3>
+          <div className="detail-container">
+            <div className="left-detail">
+              <p>Middleton, Maxwell and Schaum</p>
+              <p>06/03 - 03/05</p>
+            </div>
+            <div className="right-detail">
+              <p>Structural Engineer</p>
+              <p>
+                Applied creative and analytical problems solving skills to
+                multiple advanced building systems.
+              </p>
+            </div>
           </div>
         </div>
       </div>
