@@ -3,7 +3,7 @@ import GeneralInfoSection from "./components/GeneralInfo";
 import EducationSection from "./components/EducationSection";
 import ExperienceSection from "./components/ExperienceSection";
 import Preview from "./components/Preview";
-// import "./App.css";
+import "./App.css";
 
 function App() {
   return (
