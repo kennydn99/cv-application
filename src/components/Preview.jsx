@@ -8,7 +8,7 @@ const formatDateToMonthYear = (dateString) => {
   if (!dateString) return "";
   const date = new Date(dateString);
   const month = String(date.getMonth() + 1).padStart(2, "0"); // Add 1 to get the correct month
-  const year = String(date.getFullYear()).slice(-2); // Get the last 2 digits of the year
+  const year = String(date.getFullYear()); // Get the last 2 digits of the year
   return `${month}/${year}`;
 };
 

@@ -20,3 +20,15 @@ textarea {
   resize: vertical; /* Allows vertical resizing */
   overflow: auto; /* Adds a scrollbar if necessary */
 }
+
+.info-display {
+  margin-top: 10px;
+}
+
+.info-display p {
+  margin: 5px 0;
+}
+
+.btn-container button {
+  margin-top: 10px;
+}
