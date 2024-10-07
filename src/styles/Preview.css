@@ -18,6 +18,16 @@ p {
   gap: 24px;
 }
 
+.gen-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  height: 20px;
+}
+
 .gen-info-details {
   display: flex;
   justify-content: space-around;

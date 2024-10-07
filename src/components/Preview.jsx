@@ -1,4 +1,7 @@
 import "../styles/Preview.css";
+import addressIcon from "../assets/address-icon.png";
+import phoneIcon from "../assets/phone-icon.png";
+import emailIcon from "../assets/email-icon.png";
 
 // Helper function to format the date
 const formatDateToMonthYear = (dateString) => {
@@ -19,18 +22,24 @@ export default function Preview({
       <div className="gen-info-preview">
         <h1 className="name">{generalInfo.fullName || "Michael Scofield"}</h1>
         <div className="gen-info-details">
-          {/*icon*/}
-          <span className="email-preview">
-            {generalInfo.email || "snowflake@email.com"}
-          </span>
-          {/*icon*/}
-          <span className="phone-preview">
-            {generalInfo.phone || "123-456-7890"}
-          </span>
-          {/*icon*/}
-          <span className="address-preview">
-            {generalInfo.address || "Chicago, IL"}
-          </span>
+          <div className="gen-info-wrapper">
+            <img src={emailIcon} alt="Address Icon" className="icon" />
+            <span className="email-preview">
+              {generalInfo.email || "snowflake@email.com"}
+            </span>
+          </div>
+          <div className="gen-info-wrapper">
+            <img src={phoneIcon} alt="Address Icon" className="icon" />
+            <span className="phone-preview">
+              {generalInfo.phone || "123-456-7890"}
+            </span>
+          </div>
+          <div className="gen-info-wrapper">
+            <img src={addressIcon} alt="Address Icon" className="icon" />
+            <span className="address-preview">
+              {generalInfo.address || "Chicago, IL"}
+            </span>
+          </div>
         </div>
       </div>
       <div className="detail-preview-container">
