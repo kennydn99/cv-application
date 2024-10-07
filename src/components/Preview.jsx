@@ -9,7 +9,11 @@ const formatDateToMonthYear = (dateString) => {
   return `${month}/${year}`;
 };
 
-export default function Preview({ generalInfo, educationInfo }) {
+export default function Preview({
+  generalInfo,
+  educationInfo,
+  experienceInfo,
+}) {
   return (
     <div className="preview">
       <div className="gen-info-preview">
@@ -37,7 +41,7 @@ export default function Preview({ generalInfo, educationInfo }) {
               <p>{educationInfo.schoolName || "Loyola University"}</p>
               <p>
                 {formatDateToMonthYear(educationInfo.studyFromDate) || "08/99"}{" "}
-                -{formatDateToMonthYear(educationInfo.studyToDate) || "05/03"}
+                - {formatDateToMonthYear(educationInfo.studyToDate) || "05/03"}
               </p>
             </div>
             <div className="right-detail">
@@ -52,14 +56,17 @@ export default function Preview({ generalInfo, educationInfo }) {
           <h3>Experience</h3>
           <div className="detail-container">
             <div className="left-detail">
-              <p>Middleton, Maxwell and Schaum</p>
-              <p>06/03 - 03/05</p>
+              <p>{experienceInfo.company || "Middleton, Maxwell and Schaum"}</p>
+              <p>
+                {formatDateToMonthYear(experienceInfo.expFromDate) || "06/03"} -{" "}
+                {formatDateToMonthYear(experienceInfo.expToDate) || "03/05"}
+              </p>
             </div>
             <div className="right-detail">
-              <p>Structural Engineer</p>
+              <p>{experienceInfo.position || "Structural Engineer"}</p>
               <p>
-                Applied creative and analytical problems solving skills to
-                multiple advanced building systems.
+                {experienceInfo.responsibilities ||
+                  "Applied creative and analytical problems solving skills to multiple advanced building systems."}
               </p>
             </div>
           </div>

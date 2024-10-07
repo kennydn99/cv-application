@@ -23,6 +23,15 @@ function App() {
     studyToDate: "",
   });
 
+  // State for Experience
+  const [experienceInfo, setExperienceInfo] = useState({
+    company: "",
+    position: "",
+    responsibilities: "",
+    expFromDate: "",
+    expToDate: "",
+  });
+
   return (
     <>
       <div className="side">
@@ -34,12 +43,16 @@ function App() {
           educationInfo={educationInfo}
           setEducationInfo={setEducationInfo}
         ></EducationSection>
-        <ExperienceSection></ExperienceSection>
+        <ExperienceSection
+          experienceInfo={experienceInfo}
+          setExperienceInfo={setExperienceInfo}
+        ></ExperienceSection>
       </div>
       <div className="main">
         <Preview
           generalInfo={generalInfo}
           educationInfo={educationInfo}
+          experienceInfo={experienceInfo}
         ></Preview>
       </div>
     </>

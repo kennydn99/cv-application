@@ -59,3 +59,9 @@ p {
 .right-detail p:first-of-type {
   font-weight: 600;
 }
+
+.right-detail p {
+  word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+  overflow-wrap: break-word; /* Provides better compatibility across browsers */
+  max-width: 100%; /* Prevents the text from stretching beyond the container */
+}

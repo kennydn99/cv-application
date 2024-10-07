@@ -15,3 +15,8 @@
   display: flex;
   justify-content: center;
 }
+
+textarea {
+  resize: vertical; /* Allows vertical resizing */
+  overflow: auto; /* Adds a scrollbar if necessary */
+}
