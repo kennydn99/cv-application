@@ -15,13 +15,16 @@ function App() {
   });
 
   // State for Education
-  const [educationInfo, setEducationInfo] = useState({
-    schoolName: "",
-    studyTitle: "",
-    gpa: "",
-    studyFromDate: "",
-    studyToDate: "",
-  });
+  const [educationInfo, setEducationInfo] = useState([
+    {
+      schoolName: "Loyola University",
+      studyTitle: "B.S./M.S. in Civil Engineering",
+      gpa: "4.0",
+      studyFromDate: "1999-08-01",
+      studyToDate: "2003-05-01",
+      isEditing: false,
+    },
+  ]);
 
   // State for Experience
   const [experienceInfo, setExperienceInfo] = useState({

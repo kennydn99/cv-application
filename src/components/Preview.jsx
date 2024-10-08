@@ -5,7 +5,7 @@ import emailIcon from "../assets/email-icon.png";
 
 // Helper function to format the date
 const formatDateToMonthYear = (dateString) => {
-  if (!dateString) return "";
+  if (!dateString || isNaN(new Date(dateString))) return "";
   const date = new Date(dateString);
   const month = String(date.getMonth() + 1).padStart(2, "0"); // Add 1 to get the correct month
   const year = String(date.getFullYear()); // Get the last 2 digits of the year
@@ -42,26 +42,29 @@ export default function Preview({
           </div>
         </div>
       </div>
+      {/* Education Section */}
       <div className="detail-preview-container">
         <div className="detail-preview">
           <h3>Education</h3>
-          <div className="detail-container">
-            <div className="left-detail">
-              <p>{educationInfo.schoolName || "Loyola University"}</p>
-              <p>
-                {formatDateToMonthYear(educationInfo.studyFromDate) ||
-                  "08/1999"}{" "}
-                -{" "}
-                {formatDateToMonthYear(educationInfo.studyToDate) || "05/2003"}
-              </p>
-            </div>
-            <div className="right-detail">
-              <p>
-                {educationInfo.studyTitle || "B.S./M.S. in Civil Engineering"}
-              </p>
-              <p>{educationInfo.gpa || "3.98"}/4.0 GPA</p>
-            </div>
-          </div>
+          {educationInfo.length > 0 ? (
+            educationInfo.map((education, index) => (
+              <div className="detail-container" key={index}>
+                <div className="left-detail">
+                  <p>{education.schoolName}</p>
+                  <p>
+                    {formatDateToMonthYear(education.studyFromDate)} -{" "}
+                    {formatDateToMonthYear(education.studyToDate)}
+                  </p>
+                </div>
+                <div className="right-detail">
+                  <p>{education.studyTitle}</p>
+                  <p>{education.gpa}/4.0 GPA</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>No education information available.</p>
+          )}
         </div>
         <div className="detail-preview">
           <h3>Experience</h3>
