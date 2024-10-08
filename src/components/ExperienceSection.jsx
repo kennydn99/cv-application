@@ -85,22 +85,23 @@ export default function ExperienceSection({
         // Display submitted data with Edit button
         <div className="info-display">
           <p>
-            <strong>Company:</strong> {experienceInfo.company || "ABC Corp"}
+            <strong>Company:</strong>{" "}
+            {experienceInfo.company || "Middleton, Maxwell and Schaum"}
           </p>
           <p>
             <strong>Position:</strong>{" "}
-            {experienceInfo.position || "Software Engineer"}
+            {experienceInfo.position || "Structural Engineer"}
           </p>
           <p>
             <strong>Responsibilities:</strong>{" "}
             {experienceInfo.responsibilities ||
-              "Developed and maintained web applications."}
+              "Applied creative and analytical problems solving skills to multiple advanced building systems."}
           </p>
           <p>
-            <strong>From:</strong> {experienceInfo.expFromDate || "01/2020"}
+            <strong>From:</strong> {experienceInfo.expFromDate || "06/2003"}
           </p>
           <p>
-            <strong>To:</strong> {experienceInfo.expToDate || "12/2023"}
+            <strong>To:</strong> {experienceInfo.expToDate || "03/2005"}
           </p>
           <div className="btn-container">
             <button onClick={handleEdit}>Edit</button>

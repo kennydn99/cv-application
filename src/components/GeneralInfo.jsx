@@ -75,17 +75,17 @@ export default function GeneralInfoSection({ generalInfo, setGeneralInfo }) {
         // Display submitted data with Edit button
         <div className="info-display">
           <p>
-            <strong>Full Name:</strong> {generalInfo.fullName || "John Doe"}
+            <strong>Full Name:</strong>{" "}
+            {generalInfo.fullName || "Michael Scofield"}
           </p>
           <p>
-            <strong>Email:</strong> {generalInfo.email || "johndoe@email.com"}
+            <strong>Email:</strong> {generalInfo.email || "snowflake@email.com"}
           </p>
           <p>
             <strong>Phone Number:</strong> {generalInfo.phone || "123-456-7890"}
           </p>
           <p>
-            <strong>Address:</strong>{" "}
-            {generalInfo.address || "123 Main St, Cityville"}
+            <strong>Address:</strong> {generalInfo.address || "Chicago, IL"}
           </p>
           <div className="btn-container">
             <button onClick={handleEdit}>Edit</button>

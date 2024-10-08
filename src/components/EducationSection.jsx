@@ -83,21 +83,20 @@ export default function EducationSection({ educationInfo, setEducationInfo }) {
         <div className="info-display">
           <p>
             <strong>School:</strong>{" "}
-            {educationInfo.schoolName || "San Diego State University"}
+            {educationInfo.schoolName || "Loyola University"}
           </p>
           <p>
             <strong>Title of Study:</strong>{" "}
-            {educationInfo.studyTitle ||
-              "Bachelor of Science in Computer Science"}
+            {educationInfo.studyTitle || "B.S./M.S. in Civil Engineering"}
           </p>
           <p>
-            <strong>GPA:</strong> {educationInfo.gpa || "3.5"}
+            <strong>GPA:</strong> {educationInfo.gpa || "3.98"}
           </p>
           <p>
-            <strong>From:</strong> {educationInfo.studyFromDate || "08/2017"}
+            <strong>From:</strong> {educationInfo.studyFromDate || "08/1999"}
           </p>
           <p>
-            <strong>To:</strong> {educationInfo.studyToDate || "12/2021"}
+            <strong>To:</strong> {educationInfo.studyToDate || "05/2003"}
           </p>
           <div className="btn-container">
             <button onClick={handleEdit}>Edit</button>

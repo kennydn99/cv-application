@@ -49,8 +49,10 @@ export default function Preview({
             <div className="left-detail">
               <p>{educationInfo.schoolName || "Loyola University"}</p>
               <p>
-                {formatDateToMonthYear(educationInfo.studyFromDate) || "08/99"}{" "}
-                - {formatDateToMonthYear(educationInfo.studyToDate) || "05/03"}
+                {formatDateToMonthYear(educationInfo.studyFromDate) ||
+                  "08/1999"}{" "}
+                -{" "}
+                {formatDateToMonthYear(educationInfo.studyToDate) || "05/2003"}
               </p>
             </div>
             <div className="right-detail">
@@ -67,8 +69,8 @@ export default function Preview({
             <div className="left-detail">
               <p>{experienceInfo.company || "Middleton, Maxwell and Schaum"}</p>
               <p>
-                {formatDateToMonthYear(experienceInfo.expFromDate) || "06/03"} -{" "}
-                {formatDateToMonthYear(experienceInfo.expToDate) || "03/05"}
+                {formatDateToMonthYear(experienceInfo.expFromDate) || "06/2003"}{" "}
+                - {formatDateToMonthYear(experienceInfo.expToDate) || "03/2005"}
               </p>
             </div>
             <div className="right-detail">
