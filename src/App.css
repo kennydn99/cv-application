@@ -13,3 +13,15 @@
 .main {
   background-color: #e9e9e9;
 }
+
+@media (max-width: 960px) {
+  #root {
+    display: flex; /* Change to flex display */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  /* Optional: you can also adjust gap for mobile views */
+  #root {
+    gap: 1em; /* Reduce gap for mobile views */
+  }
+}
