@@ -73,7 +73,7 @@ export default function GeneralInfoSection({ generalInfo, setGeneralInfo }) {
         </form>
       ) : (
         // Display submitted data with Edit button
-        <div className="info-display">
+        <div className="info-display gen-info">
           <p>
             <strong>Full Name:</strong>{" "}
             {generalInfo.fullName || "Michael Scofield"}

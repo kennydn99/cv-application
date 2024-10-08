@@ -114,9 +114,9 @@ export default function ExperienceSection({
               </div>
             </form>
           ) : (
-            <div className="info-display">
+            <div className="info-display edu-exp">
               <p>
-                <strong>Company:</strong> {entry.company}
+                <strong>{entry.company}</strong>
               </p>
               <button onClick={() => handleEdit(index)}>Edit</button>
             </div>

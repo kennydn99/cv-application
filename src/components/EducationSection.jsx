@@ -117,9 +117,9 @@ export default function EducationSection({ educationInfo, setEducationInfo }) {
             </form>
           ) : (
             // Display data with an Edit button
-            <div className="info-display">
+            <div className="info-display edu-exp">
               <p>
-                <strong>School:</strong> {entry.schoolName}
+                <strong>{entry.schoolName}</strong>
               </p>
               <button onClick={() => handleEdit(index)}>Edit</button>
             </div>

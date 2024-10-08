@@ -23,8 +23,15 @@ textarea {
 
 .info-display {
   margin-top: 10px;
+}
+
+.info-display.edu-exp {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .info-display p {
