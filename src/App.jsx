@@ -27,13 +27,17 @@ function App() {
   ]);
 
   // State for Experience
-  const [experienceInfo, setExperienceInfo] = useState({
-    company: "",
-    position: "",
-    responsibilities: "",
-    expFromDate: "",
-    expToDate: "",
-  });
+  const [experienceInfo, setExperienceInfo] = useState([
+    {
+      company: "Middleton, Maxwell and Schaum",
+      position: "Structural Engineer",
+      responsibilities:
+        "Applied creative and analytical problems solving skills to multiple advanced building systems.",
+      expFromDate: "2003-06-01",
+      expToDate: "2005-03-01",
+      isEditing: false,
+    },
+  ]);
 
   return (
     <>

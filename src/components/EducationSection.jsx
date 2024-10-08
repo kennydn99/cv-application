@@ -121,9 +121,7 @@ export default function EducationSection({ educationInfo, setEducationInfo }) {
               <p>
                 <strong>School:</strong> {entry.schoolName}
               </p>
-              <div className="btn-container">
-                <button onClick={() => handleEdit(index)}>Edit</button>
-              </div>
+              <button onClick={() => handleEdit(index)}>Edit</button>
             </div>
           )}
         </div>

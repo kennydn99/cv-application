@@ -66,24 +66,28 @@ export default function Preview({
             <p>No education information available.</p>
           )}
         </div>
+        {/* Experience Section */}
         <div className="detail-preview">
           <h3>Experience</h3>
-          <div className="detail-container">
-            <div className="left-detail">
-              <p>{experienceInfo.company || "Middleton, Maxwell and Schaum"}</p>
-              <p>
-                {formatDateToMonthYear(experienceInfo.expFromDate) || "06/2003"}{" "}
-                - {formatDateToMonthYear(experienceInfo.expToDate) || "03/2005"}
-              </p>
-            </div>
-            <div className="right-detail">
-              <p>{experienceInfo.position || "Structural Engineer"}</p>
-              <p>
-                {experienceInfo.responsibilities ||
-                  "Applied creative and analytical problems solving skills to multiple advanced building systems."}
-              </p>
-            </div>
-          </div>
+          {experienceInfo.length > 0 ? (
+            experienceInfo.map((experience, index) => (
+              <div className="detail-container" key={index}>
+                <div className="left-detail">
+                  <p>{experience.company}</p>
+                  <p>
+                    {formatDateToMonthYear(experience.expFromDate)} -{" "}
+                    {formatDateToMonthYear(experience.expToDate)}
+                  </p>
+                </div>
+                <div className="right-detail">
+                  <p>{experience.position}</p>
+                  <p>{experience.responsibilities}</p>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p>No experience information available.</p>
+          )}
         </div>
       </div>
     </div>
